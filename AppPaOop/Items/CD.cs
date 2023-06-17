@@ -2,10 +2,13 @@
 namespace AppPaOop.Items
 {
 	public class CD : ItemBase
-	{
-		public CD()
-		{
-		}
-	}
+    {
+        public CD(string name, int numberOfTracks)
+        {
+            ObjectsCounter++;
+            Id = ObjectsCounter;
+            Name = name;
+            Length = numberOfTracks;
+        }
+    }
 }
-
